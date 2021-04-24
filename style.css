@@ -8,17 +8,16 @@ body {
 div {
     background-color:black;
     color:white;
-    display:block;
-    height:50%;
-    width:50%;
-    top: -5%;
-    margin:0px auto;
+    width:30%;
     border: 5px white double;
     border-radius: 20px;
-    position: relative;
+    position: absolute;
     padding:20px;
     text-align:center;
     font-family: 'Montserrat Alternates', sans-serif;
+    word-wrap: break-word;
+    top:30%;
+    left:35%;
 }
 
 .logo {
@@ -41,17 +40,16 @@ a {
     background-color:lightgreen;
     color:white;
     display:block;
-    height:45px;
-    width:500px;
-    margin:0px auto;
     border-radius: 20px;
-    position: relative;
+    position: absolute;
     padding:10px 5px 20px 5px;
     text-decoration:none;
     font-size:40px;
     text-align:center;
     font-family: 'Paytone One', sans-serif;
-    border: darkgreen;
+    width: 20%;
+    bottom:10%;
+    left:40%;
 }
 
 a:hover {
@@ -67,36 +65,51 @@ h3 {
     text-align: center;
     padding: 30px;
     font-family: 'Montserrat Alternates', sans-serif;
+    word-wrap: break-word;
+    width:20%;
 }
 
 #one {
-    top:20%;
-    left:5%;
-    width: 150px;
-    height: 150px;
-}
+    top:15%;
+    left:5%;     
+    }
 
 #two {
     bottom: 5%;
     right: 5%;
-
-    width: 200px;
-    height: 200px;
-
 }
 
 #three {
     bottom:5%;
     left: 5%;
-    width: 200px;
-    height: 220px;
-
 }
 
 #four {
     top: 5%;
     right: 5%;
-    width: 200px;
-    height: 250px;
-
 }
+@media screen and (max-width: 700px) {
+    h3 {
+      display:none;
+    }
+
+h1{
+    font-size:60px;
+}
+
+h2 {
+    font-size:30px;
+}
+
+a {
+    font-size:20px;
+}
+
+div, a {
+    position:relative;
+    margin: 0 auto;
+    width:400px;
+    left:10px;
+    top:20px;
+}
+  }
